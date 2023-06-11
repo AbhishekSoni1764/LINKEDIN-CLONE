@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stored Login Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stored Login Data</h1>
+    <table id="loginTable">
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+    </table>
+
+    <script>
+        var encodedData = window.location.search.substring(1);
+        var decodedData = decodeURIComponent(encodedData);
+
+        var loginDataArray = JSON.parse(decodedData);
+
+        var table = document.getElementById('loginTable');
+
+        for (var i = 0; i < loginDataArray.length; i++) {
+            var loginData = loginDataArray[i];
+
+            var newRow = table.insertRow();
+            var idCell = newRow.insertCell();
+            var emailCell = newRow.insertCell();
+            var passwordCell = newRow.insertCell();
+
+            idCell.innerHTML = i + 1; 
+            emailCell.innerHTML = loginData.email;
+            passwordCell.innerHTML = loginData.password;
+        }
+    </script>
+</body>
+</html>

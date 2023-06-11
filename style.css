@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+body{
+    background-color: rgb(226, 226, 220);
+    text-align: center;
+    height: 100vh;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0.6rem;
+    margin-left: 12%;
+    width: 173px;
+    padding-bottom: 0;
+}
+section h2{
+    font-weight: 390px;
+    margin: 1.5rem;
+    font-size: 1.8rem; 
+}
+.btn-google img{
+    width: 20px;
+    height: 20px;
+}
+form{
+    background-color: white;
+    width: 390px;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+}
+form input{
+    width: 100%;
+    padding: .3rem .7rem;
+    border-radius: .2rem;
+    border: none;
+    box-shadow: 0 0 0 1px #171717;
+    outline: none;
+}
+form input:focus{
+    box-shadow: 0 0 0 2px #171717;
+}
+form label{
+    display: block;
+    text-align: left;
+    color: #08060699;
+    font-size: .8rem;
+    margin-bottom: .2rem;
+}
+form .form-ep{
+    margin: 1rem 0;
+}
+form p{
+    font-size: .7rem;
+    color: rgb(8, 7, 7);
+    margin: 1rem 0;
+}
+form p a{
+    font-weight: 600;
+}
+a{
+    color: rgb(34, 107, 202);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+form button{
+    width: 100%;
+    padding: .7rem;
+    border-radius: 100vw;
+    border: none;
+    cursor: pointer;
+}
+form .btn-agree{
+    background-color: rgb(34, 107, 202);
+    box-shadow: 0 0 0 1px black;
+    color: white;
+    font-size: 1rem;
+}
+form .btn-agree:hover{
+    background-color: rgb(31, 80, 145);
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0 0 0 2px black;
+    font-weight: 600;
+}
+form .btn-google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    background-color: transparent;
+    color: rgb(22, 77, 187);
+    font-weight: 500;
+    font-size: 1rem;
+}
+form .btn-google:hover{
+    box-shadow: 0 0 0 2px rgb(22, 77, 187);
+    background-color: aliceblue;
+}
+form i {
+    margin-left: -30px;
+    position: absolute;
+    cursor: pointer;
+}
+.or{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+.or .rule{
+    height: 1px;
+    flex: 1;
+    background-color: #c5c5c5;
+}
+.or h4{
+    padding: 0 1rem;
+    font-size: .9rem;
+    font-weight: 300px;
+}
+.signin{
+    font-size: .9rem;
+    color: black;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+.help{
+    font-size: .8rem;
+    margin-top: 1.5rem;
+}
+.help a{
+    font-weight: 600;
+}
+footer .sep{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding: .6rem 0;
+}
+footer *{
+    color: black;
+    font-size: .8rem;
+}
+footer > *{
+    margin: 0 .5rem;
+}
+footer a:hover{
+    color: rgb(34, 107, 202);
+}
+.bottom * {
+    margin: 0 .2rem;
+}
+.bottom img{
+    width: 60px;
+    filter: grayscale(100%);
+}
+.bottom{
+    display: flex;
+    align-content: center;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        height: 100vh;
+        width: 100%;
+    }
+    .img{
+        padding: 2rem 0.6rem;
+        margin-left: 2%;
+        width: 150px;
+        padding-bottom: 0;
+    }
+    section h2{
+        font-weight: 250px;
+        margin: 1.5rem;
+        font-size: 1.5rem; 
+        margin: .8rem .5rem;
+    }
+    form{
+        width: 100%;
+    }
+    form .btn-agree{
+        font-size: .85rem;
+        overflow: hidden;
+    }
+    form .btn-google{
+        font-weight: 450;
+        font-size: 0.8rem;
+        overflow: hidden;
+    }
+    .signin{
+        font-size: .7rem;
+        font-weight: 250;
+        margin-top: 1.5rem;
+    }
+    .help{
+        font-size: .7rem;
+        margin-top: 1.3rem;
+    }
+    .help a{
+        font-weight: 550;
+    }
+    footer{
+        display: flex;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        padding: .6rem 0;
+    }
+    footer *{
+        padding: .2rem;
+    }
+    footer .sep{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        position: relative;
+        
+    }
+  }
+  @media screen and (610px <= width <= 1300px) {
+    body{
+        height: auto;
+        width: auto;
+    }
+    .img{
+        padding: 2rem 0.6rem;
+        margin-left: 7%;
+        width: 150px;
+        padding-bottom: 0;
+    }
+    section h2{
+        font-weight: 250px;
+        margin: 1.5rem;
+        font-size: 1.5rem; 
+        margin: .8rem .5rem;
+    }
+    form{
+        width: 50%;
+    }
+    form .btn-agree{
+        font-size: .85rem;
+        overflow: hidden;
+    }
+    form .btn-google{
+        font-weight: 450;
+        font-size: 0.8rem;
+        overflow: hidden;
+    }
+    .signin{
+        font-size: .8rem;
+        font-weight: 300;
+        margin-top: 1.5rem;
+    }
+    .help{
+        font-size: .8rem;
+        margin-top: 1.3rem;
+    }
+    .help a{
+        font-weight: 600;
+    }
+    footer{
+        display: flex;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        padding: .6rem 0;
+        margin-bottom: 0;
+    }
+    footer *{
+        padding: .2rem;
+    }
+    footer .sep{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+        position: relative;
+        
+    }
+  }
